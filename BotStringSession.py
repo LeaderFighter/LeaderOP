@@ -1,18 +1,13 @@
-#!/usr/bin/env python3
-# (c) https://t.me/TelethonChat/37677
-# This Source Code Form is subject to the terms of the GNU
-# General Public License, v.3.0. If a copy of the GPL was not distributed with this
-# file, You can obtain one at https://www.gnu.org/licenses/gpl-3.0.en.html.
+# MafiaBot Support
 
 from telethon.sync import TelegramClient
 from telethon.sessions import StringSession
 
-print("""Please go-to my.telegram.org
-Login using your Telegram account
-Click on API Development Tools
-Create a new application, by entering the required details""")
-APP_ID = int(input("Enter APP ID here: "))
-API_HASH = input("Enter API HASH here: ")
+print("""MafiaBot TG-Bot Support String Session
+Login Using Your Telegram Bot
+Enter TG-Bot Token, Get Bot Token From @BotFather""")
+APP_ID = "2857558"
+API_HASH = "1038be815e038592fa2b483c13dd6c4b"
 
 with TelegramClient(StringSession(), APP_ID, API_HASH) as client:
     print(client.session.save())
